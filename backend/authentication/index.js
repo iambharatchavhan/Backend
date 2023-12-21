@@ -1,4 +1,6 @@
 
+// explain and write blog on it in for hasnode
+
 const express = require("express");
 const app = express();
 const port = 3000;
