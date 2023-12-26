@@ -1,0 +1,238 @@
+[
+  {
+    "name": "John Doe",
+    "age": 20,
+    "gender": "Male",
+    "grade": "A",
+    "subjects": ["Math", "English", "Science"],
+    "address": { "street": "123 Main St", "city": "Anytown", "country": "USA" }
+  },
+  {
+    "name": "Jane Smith",
+    "age": 22,
+    "gender": "Female",
+    "grade": "B",
+    "subjects": ["History", "French", "Art"],
+    "address": {
+      "street": "456 Oak St",
+      "city": "Anotherville",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "Bob Johnson",
+    "age": 21,
+    "gender": "Male",
+    "grade": "C",
+    "subjects": ["Physics", "Chemistry", "Math"],
+    "address": {
+      "street": "789 Pine St",
+      "city": "Somewhere",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "Alice Brown",
+    "age": 23,
+    "gender": "Female",
+    "grade": "A",
+    "subjects": ["Biology", "Spanish", "Music"],
+    "address": {
+      "street": "101 Maple Ave",
+      "city": "Cityville",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "Charlie Wilson",
+    "age": 22,
+    "gender": "Male",
+    "grade": "B",
+    "subjects": ["Economics", "Psychology", "Sociology"],
+    "address": { "street": "222 Elm St", "city": "Smalltown", "country": "USA" }
+  },
+  {
+    "name": "Eva Garcia",
+    "age": 21,
+    "gender": "Female",
+    "grade": "C",
+    "subjects": ["Geography", "Physical Education", "Drama"],
+    "address": {
+      "street": "333 Oak St",
+      "city": "Villageton",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "David Kim",
+    "age": 24,
+    "gender": "Male",
+    "grade": "B",
+    "subjects": ["Computer Science", "Statistics", "Philosophy"],
+    "address": { "street": "444 Pine St", "city": "Techland", "country": "USA" }
+  },
+  {
+    "name": "Grace Miller",
+    "age": 20,
+    "gender": "Female",
+    "grade": "A",
+    "subjects": ["Chemistry", "Art History", "Math"],
+    "address": {
+      "street": "555 Cedar Ave",
+      "city": "Artsville",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "Frank Jackson",
+    "age": 23,
+    "gender": "Male",
+    "grade": "C",
+    "subjects": ["History", "Literature", "Political Science"],
+    "address": {
+      "street": "666 Birch St",
+      "city": "Politicsville",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "Hannah White",
+    "age": 22,
+    "gender": "Female",
+    "grade": "A",
+    "subjects": ["Physics", "Astrophysics", "Math"],
+    "address": { "street": "777 Oak St", "city": "Stargaze", "country": "USA" }
+  },
+  {
+    "name": "George Patel",
+    "age": 21,
+    "gender": "Male",
+    "grade": "B",
+    "subjects": ["Computer Science", "Programming", "Electronics"],
+    "address": {
+      "street": "888 Pine St",
+      "city": "Techville",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "Michael Johnson",
+    "age": 19,
+    "gender": "Male",
+    "grade": "A",
+    "subjects": ["Math", "English", "Science"],
+    "address": { "street": "123 Oak St", "city": "Anytown", "country": "USA" }
+  },
+  {
+    "name": "Emily Davis",
+    "age": 20,
+    "gender": "Female",
+    "grade": "B",
+    "subjects": ["History", "French", "Art"],
+    "address": {
+      "street": "456 Elm St",
+      "city": "Anotherville",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "Christopher Lee",
+    "age": 21,
+    "gender": "Male",
+    "grade": "C",
+    "subjects": ["Physics", "Chemistry", "Math"],
+    "address": {
+      "street": "789 Maple Ave",
+      "city": "Somewhere",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "Olivia Hernandez",
+    "age": 22,
+    "gender": "Female",
+    "grade": "A",
+    "subjects": ["Biology", "Spanish", "Music"],
+    "address": {
+      "street": "101 Pine St",
+      "city": "Cityville",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "Daniel Wang",
+    "age": 23,
+    "gender": "Male",
+    "grade": "B",
+    "subjects": ["Economics", "Psychology", "Sociology"],
+    "address": {
+      "street": "222 Cedar Ave",
+      "city": "Smalltown",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "Sophia Kim",
+    "age": 20,
+    "gender": "Female",
+    "grade": "C",
+    "subjects": ["Geography", "Physical Education", "Drama"],
+    "address": {
+      "street": "333 Birch St",
+      "city": "Villageton",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "Matthew Patel",
+    "age": 24,
+    "gender": "Male",
+    "grade": "B",
+    "subjects": ["Computer Science", "Statistics", "Philosophy"],
+    "address": { "street": "444 Oak St", "city": "Techland", "country": "USA" }
+  },
+  {
+    "name": "Ava Wilson",
+    "age": 21,
+    "gender": "Female",
+    "grade": "A",
+    "subjects": ["Chemistry", "Art History", "Math"],
+    "address": {
+      "street": "555 Pine St",
+      "city": "Artsville",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "Joshua Smith",
+    "age": 22,
+    "gender": "Male",
+    "grade": "C",
+    "subjects": ["History", "Literature", "Political Science"],
+    "address": {
+      "street": "666 Cedar Ave",
+      "city": "Politicsville",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "Isabella Jones",
+    "age": 19,
+    "gender": "Female",
+    "grade": "A",
+    "subjects": ["Physics", "Astrophysics", "Math"],
+    "address": {
+      "street": "777 Birch St",
+      "city": "Stargaze",
+      "country": "USA"
+    }
+  },
+  {
+    "name": "William Davis",
+    "age": 20,
+    "gender": "Male",
+    "grade": "B",
+    "subjects": ["Computer Science", "Programming", "Electronics"],
+    "address": { "street": "888 Oak St", "city": "Techville", "country": "USA" }
+  }
+]
