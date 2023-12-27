@@ -192,3 +192,129 @@ Without `{ ordered: false }` (or with { ordered: true }, which is the default), 
 db.students.insertMany([{}, {}, {}], { ordered: false })
 
 ```
+## Read Operations 
+The `db.collectionName.find({ key: value })` syntax in MongoDB is used to retrieve documents from a collection that match a specified condition. 
+
+`db.collectionName`: Specifies the collection where the search will be performed. Replace "collectionName" with the actual name of your collection.
+
+`.find({ key: value })`: The find() method is used to query documents in the collection. Inside the find() method, you provide a condition expressed as a key-value pair. This condition is used to filter documents based on the specified field and its corresponding value.
+
+```javascript
+db.student.find({'grade':'A'})
+```
+
+```javascript
+[
+  {
+    _id: ObjectId('658ad314011e6a5d02559e27'),
+    name: 'John Doe',
+    age: '20',
+    gender: 'Male',
+    grade: 'A', // it filtered due to to this field
+    subjects: [ 'Math', 'English', 'Science' ],
+    address: { street: '123 Main St', city: 'Anytown', country: 'USA' }
+  }
+]
+```
+
+```javascript
+
+ db.student.findOne({'gender':'male'})
+
+```
+it will only give the first document that contain field `gender:male` and skip all remain.
+
+## Arithmetics operators in shell
+
+### $eq => Equal to
+
+The $eq is a query operator used in the context of querying documents based on equality. It stands for "equals" and is used to match documents where a specified field is equal to a certain value.
+
+Here's a basic example of how you might use $eq in a MongoDB query:
+
+```bash
+db.collection.find({ field: { $eq: "value" } })
+```
+You can also use $eq for numeric comparisons. For instance, if you want to find students with a specific age:
+
+```bash
+db.students.find({ age: { $eq: 20 } })
+```
+
+This query would retrieve documents from the "students" collection where the "age" field is equal to 20.
+
+```bash
+[
+  {
+    _id: ObjectId('658ae5266058972bff93a800'),
+    name: 'John Doe',
+    age: 20,
+    gender: 'Male',
+    grade: 'A',
+    subjects: [ 'Math', 'English', 'Science' ],
+    address: { street: '123 Main St', city: 'Anytown', country: 'USA' }
+  },
+  {
+    _id: ObjectId('658ae5266058972bff93a802'),
+    name: 'Grace Miller',
+    age: 20,
+    gender: 'Female',
+    grade: 'A',
+    subjects: [ 'Chemistry', 'Art History', 'Math' ],
+    address: { street: '555 Cedar Ave', city: 'Artsville', country: 'USA' }
+  }
+]
+
+```
+### $ne => Not equal to
+
+The `$ne (not equal)` operator is used to find documents where the specified field is not equal to a particular value. Here's how you can use $ne in the context of the "students" collection:
+```bash
+db.students.find({ grade: { $ne: "A" } })
+```
+In this example, the query will return documents from the "students" collection where the "grade" field is not equal to "A". You can replace "grade" and "A" with your specific field and value.
+
+### $lt = Less than and $gt Greater than
+the `$lt` operator is used to find documents where the value of a specified field is less than (<) a given value. Here's an example using the "students" collection:
+
+```bash
+db.students.find({ age: { $lt: 25 } })
+```
+`$gt `(greater than) operator is used to find documents where the value of a specified field is greater than a given value. Here's an example using the "students" collection:
+
+```bash
+db.students.find({ age: { $gt: 20 } })
+```
+
+
+### $gte and $lte
+`$gte `(greater than or equal to) and $lte (less than or equal to) operators are used for range queries. Here are examples using the "students" collection:
+
+>Greater Than or Equal To ($gte):
+```bash
+db.students.find({ age: { $gte: 20 } })
+```
+>Less Than or Equal To ($lte):
+```bash
+db.students.find({ score: { $lte: 60 } })
+```
+This query will retrieve documents from the "students" collection where the "score" field is less than or equal to 60.
+
+### $in and $nin
+the `$in and $nin` operators are used for matching values within and outside a specified set, respectively.
+
+**$in Operator:**
+
+The $in operator selects documents where the value of a field equals any value in the specified array. Here's an example:
+```bash
+db.students.find({ grade: { $in: ["A", "B", "C"] } })
+```
+This query will return documents from the "students" collection where the "grade" field is equal to "A", "B", or "C".
+
+**$nin Operator:**
+The` $nin` operator selects documents where the value of a field does not equal any value in the specified array. Here's an example:
+```bash
+db.students.find({ grade: { $nin: ["D", "F"] } })
+```
+This query will return documents from the "students" collection where the "grade" field is not equal to "D" or "F".
+
