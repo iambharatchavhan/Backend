@@ -49,9 +49,6 @@ router.get('/courses', async(req,res)=>{
 })
 
 
-
-
-
 router.post('/courses/:courseId',userMiddleware,async(req,res)=>{
     try {
         const courseId = req.params.courseId;
