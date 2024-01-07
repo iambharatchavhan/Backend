@@ -11,4 +11,6 @@
 
 ![Alt text](<Screenshot from 2024-01-06 19-43-43.png>)
 
+# React.memo
+
 ![Alt text](<Screenshot from 2024-01-06 19-54-07.png>)
