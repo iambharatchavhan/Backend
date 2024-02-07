@@ -1,15 +1,16 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import useProducts from '../CustomAPI/useProducts'
 import Product from './Product'
 
+
 const Home = () => {
   const {data, isError, isLoading} = useProducts()
-  // console.log(data)
+
   return (
     <section id='home'>
       <div>
       {isLoading && (<h1>Loading.....</h1>)}
-   {data && ( <Product products= {data}/>)}
+   {data && ( <Product products= {data} />)}
 
 
       </div>

@@ -1,4 +1,5 @@
-import React from "react";
+import React,{useContext} from "react";
+import { StoreCart } from "../Store";
 
 const Product = ({products}) => {
 //    console.log(product)
@@ -6,6 +7,9 @@ const Product = ({products}) => {
         return
     }
 // console.log(products.products)
+
+const {cart ,setCart} = useContext(StoreCart) 
+console.log(cart)
 
   return (
     <section id="products-container">
@@ -27,7 +31,16 @@ const Product = ({products}) => {
          <div> {
 prod.discountPercentage}% OFF</div>
        </div>
-       <button className="btn-addCart">Add To Cart</button>
+
+       {cart.includes(prod) ?  <button className="btn-addCart btn-remove"
+        onClick={()=>setCart(cart.filter((prRemove)=> prRemove.id !== prod.id))}
+      >Remove</button> : <button className="btn-addCart"
+         onClick={()=>setCart([...cart, prod])}
+       >Add To Cart</button>
+      
+        }
+       
+      
      </div>
    </div>
 

@@ -9,12 +9,14 @@
 }
 .logo{
     font-size: 1.5rem;
-    background: linear-gradient(to right, #084BCF 29%, #CF2323 77%);
+    background: linear-gradient(to right, #ffffff 29%, #CF2323 77%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     border: 1px solid rgb(0, 0, 0);
     border-radius: 20px;
     padding: 0 .5rem;
+    
+
 }
 .nav{
     display: flex;
@@ -83,3 +85,58 @@
     font-size: 1.2rem;
     font-weight: 600;
 }
+.btn-remove{
+    background-color: #CF2323;
+}
+
+.cart-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.products-cart{
+    /* border: 1px solid blue; */
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: .5rem;
+    border: 1px solid gray;
+}
+.cart-img{
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+}
+.cart-img img{
+    object-fit: cover;
+    width: 100%;
+}
+.delete-item-btn{
+    border: 1px solid red;
+    background: none;
+    padding: .5rem;
+   border-radius: 50%;
+}
+
+.count{
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    border: 1px solid #fff;
+    padding: .5rem .8rem;
+    border-radius: 50%;
+}
+.empty-cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+.theHome{
+    text-decoration: none;
+    color: #56e712;
+    font-size: 2rem;
+}   
